@@ -37,7 +37,9 @@ end
 
 class Burn < Sinatra::Base
   post '/' do
-    campfire.notify(params[:message])
+    message = params[:message]
+    Thread.new { campfire.notify(message) }
+    message
   end
 
   def campfire
