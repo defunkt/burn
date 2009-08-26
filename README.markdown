@@ -1,10 +1,12 @@
 Burn
 ====
 
-Burn is a Sinatra app that lists for POSTs and forward the messages it
+Burn is a Sinatra app that listens for POSTs and forwards the messages it
 receives to Campfire.
 
-Make a `campfire.yml`. Put it in the same directory as `burn.rb`. Run
-`burn.rb` with ruby: `$ ruby burn.rb`. Hit it.
+1. Make a `campfire.yml`. 
+2. Put it in the same directory as `burn.rb`. 
+3. Run it: `$ ruby burn.rb`. 
+4. Hit it: `curl -F message='Hi mom!' http://localhost:4567`
 
-chris@ozmm.org
+Chris Wanstrath // chris@ozmm.org
