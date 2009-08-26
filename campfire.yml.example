@@ -1,0 +1,5 @@
+account: githubs
+room: The Danger Room
+user: chris@github.com
+pass: secret
+ssl: true
